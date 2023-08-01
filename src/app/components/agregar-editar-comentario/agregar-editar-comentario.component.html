@@ -1,5 +1,5 @@
-<h1 class="mt-3">Agregar Comentario</h1>
-<form class="mt-5" [formGroup]="agregarComentario" (ngSubmit)="agregar()">
+<h1 class="mt-3">{{accion}} Comentario</h1>
+<form class="mt-5" [formGroup]="agregarComentario" (ngSubmit)="agregarEditar()">
     <div class="mb-3">
         <label for="titulo" class="form-label">Titulo</label>
         <input formControlName="titulo" type="text" class="form-control" id="titulo" placeholder="Titulo del comentario">

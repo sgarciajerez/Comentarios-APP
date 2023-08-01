@@ -1,8 +1,8 @@
-<div>
-    <h1>Angular</h1>
-    <p>Qué pedazo de texto tengo</p>
+<div *ngIf="comentario !== undefined">
+    <h1>{{comentario.titulo}}</h1>
+    <p> {{comentario.texto}}</p>
     <ul>
-        <li>Juan</li>
-        <li>12/12/2020</li>
+        <li>{{comentario.creador}}</li>
+        <li>{{comentario.fechaCreacion | date:'dd/MM/yy' }}</li>
     </ul>
 </div>
